@@ -15,21 +15,15 @@
 	        <img src="http://111.231.84.129/images/button31.png">
 	      </div>
 	    </div>
-	</div>
+	  </div>
 	<!-- <router-view></router-view> -->
     <div class="blur">
-    	<div class="titleDiv"><img src="http://111.231.84.129/images/xncw2.png" class="title"></div>
 
-    	<div class="button-group2">
-			<div>
-				<img src="http://111.231.84.129/images/button13.png">
-				<router-link to="/case"><img src="http://111.231.84.129/images/button14.png"></router-link>
-			</div>
-			<div>
-				<router-link to="/test"><img src="http://111.231.84.129/images/button15.png" style="padding-left:115px"></router-link>
-				<img src="http://111.231.84.129/images/button16.png">
-			</div>
-		</div>
+    	<h1>艾滋病{{$route.params.id}}</h1>
+      <div class="content">
+        <img src="./test.jpeg">
+        <p>等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载等待加载</p>
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +33,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'this is cosplay'
+      msg: 'this is cosplay',
     }
   }
 }
@@ -59,20 +53,16 @@ export default {
     justify-content: space-around;
   }
   .menu{
-  	flex-grow: 1;
+  	flex: 1;
   }
   .blur{
-	background:rgba(255,255,255,0.5); 	
-	filter:alpha(opacity:50); 
-  	flex-grow: 3;
+	  background:rgba(255,255,255,0.5); 	
+	  filter:alpha(opacity:50); 
+  	flex: 3;
   	height: 100%;
+    flex-wrap: wrap;
   }
   
-  .titleDiv{
-  }
-  .title{
-    height: 150px;
-  }
   .button-group{
     display: flex;
     flex-direction: column;
@@ -80,13 +70,19 @@ export default {
   .button-group img{
     width: 120px;
   }
-  .button-group2{
-    display: flex;
-    flex-direction: column;
+  .content{
+    overflow: hidden;
+    font-family: microsoftYahei;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px; 
+
   }
-  .button-group2 img{
-    width: 160px;
+
+  .content img{
+    height: 250px;
   }
+
 
 
 

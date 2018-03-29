@@ -8,12 +8,12 @@
         <router-link to="/guide"><img src="http://111.231.84.129/images/button2.png"></router-link>
       </div>
       <div>
-        <img src="http://111.231.84.129/images/button3.png" style="padding-left:95px">
+        <router-link to="/cosplay"><img src="http://111.231.84.129/images/button3.png" style="padding-left:95px"></router-link>
         <img src="http://111.231.84.129/images/button4.png">
       </div>
       <div>
         <img src="http://111.231.84.129/images/button5.png">
-        <img src="http://111.231.84.129/images/button6.png">
+        <router-link to="/learning"><img src="http://111.231.84.129/images/button6.png"></router-link>
       </div>   
     </div>
   </div>
